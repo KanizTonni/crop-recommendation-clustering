@@ -36,7 +36,7 @@ class model_input(BaseModel):
     
 
 # loading the saved model
-Cluster_pickle_in = open("KMeansCluster.pkl","rb")
+Cluster_pickle_in = open("Cluster.pkl","rb")
 RFclassifier=pickle.load(Cluster_pickle_in)
 
 @app.post('/crop-predict')
